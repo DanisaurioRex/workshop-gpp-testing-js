@@ -1,0 +1,15 @@
+{
+  "name": "workshop-gpp-testing",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Good Programming Practices in Javascript",
+  "scripts": {
+    "start": "cd ./src && npm run start"
+  },
+  "keywords": [
+    "gpp",
+    "dojo",
+    "practice"
+  ],
+  "author": "Daniel Jimenez <dany.jimenez999@gmail.com> (DanisaurioRex)",
+  "license": "MIT"
+}
