@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage })
 
 router.get('/', function (req, res, next) {
-  res.render('upload', { title: 'Express' });
+  res.render('upload', { title: 'Upload' });
 });
 
 router.post('/', upload.single('imageupload'), function (req, res) {

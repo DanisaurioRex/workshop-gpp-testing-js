@@ -4,7 +4,7 @@ var router = express.Router();
 
 router.get('/', (req, res) => {
   fs.readdir("public/uploads", (err, files) => {
-    res.send(JSON.stringify(files));
+    res.send(Object.values(files));
   });
 });
 
