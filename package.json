@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is a Workshop about Good Programming Practices for Testing in Javascript",
   "scripts": {
-    "start": "cd ./src && npm run start",
+    "start": "cd ./src && npm run watch",
     "test": "cd ./test && npm run test"
   },
   "keywords": [

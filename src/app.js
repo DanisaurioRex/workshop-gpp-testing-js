@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var uploadRouter = require('./routes/upload');
+var frontFileRouter = require('./routes/front/files');
+var backFilesRouter = require('./routes/back/files');
 
 var app = express();
 
@@ -22,8 +22,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/upload', uploadRouter);
+app.use('/', frontFileRouter);
+app.use('/back', backFilesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
